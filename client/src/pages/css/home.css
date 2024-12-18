@@ -1,0 +1,175 @@
+
+.buttons-container {
+  display: flex;
+  justify-content: flex-end; 
+  margin-bottom: 20px; 
+  margin-left: 500px; /* Adjusted margin for buttons */
+}
+
+/* Logout button */
+.logout-button {
+  height: 50px;
+  background-color: red; /* Red color */
+  color: black;
+  border: none;
+  border-radius: 8px; /* Larger rounded corners for a more pronounced effect */
+  padding: 5px 30px; /* Increased padding for bigger buttons */
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Add Employee button */
+.add-employee-button {
+  height: 50px;
+  background-color: green; /* Green color */
+  color: black;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 30px; /* Increased padding for bigger buttons */
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.add-employee-button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+}
+
+/* Table styles */
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 100px;
+  margin-top: 50px; /* Adjusted margin-top to move the table down a little */
+}
+
+/* Table header styling */
+.employee-table th {
+  background-color:lightseagreen; /* Light gray background */
+  color: #333; 
+  font-size: 14px; 
+  padding: 16px;
+  text-align: center; /* Center align table headers */
+}
+
+/* Table row styling */
+.employee-table td {
+  border: 1px solid #ddd;
+  padding: 16px;
+  text-align: center; /* Center align table cells content */
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Row hover effect */
+.employee-table tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+/* Column-specific width adjustments */
+.employee-table th:nth-child(1),
+.employee-table td:nth-child(1) {
+  width: 200px;
+}
+
+.employee-table th:nth-child(2),
+.employee-table td:nth-child(2) {
+  width: 250px;
+}
+
+.employee-table th:nth-child(3),
+.employee-table td:nth-child(3) {
+  width: 250px;
+}
+
+/* Input fields (centered and slightly adjusted for better alignment) */
+.employee-table input,
+.employee-table select {
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 14px;
+  width: 90%;  /* Adjusted to make input fields fit well */
+  border: 1px solid #ddd;
+  background-color: #e0f2f1;
+  text-align: center;  /* Center align text inside input fields */
+  box-sizing: border-box;
+}
+
+/* Input focus styles */
+.employee-table input:focus,
+.employee-table select:focus {
+  outline: none;
+  border-color: #009688;
+  box-shadow: 0 0 5px rgba(0, 150, 136, 0.5);
+}
+
+/* Delete Modal Styles */
+.delete-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.delete-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.delete-modal-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.delete-modal-actions {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.delete-modal-confirm-button,
+.delete-modal-cancel-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-modal-confirm-button {
+  background-color: #e74c3c; /* Red for delete */
+  color: white;
+}
+
+.delete-modal-cancel-button {
+  background-color: #95a5a6; /* Gray for cancel */
+  color: white;
+}
+
+.delete-modal-confirm-button:hover {
+  background-color: #c0392b; /* Darker red */
+}
+
+.delete-modal-cancel-button:hover {
+  background-color: #7f8c8d; /* Darker gray */
+}
